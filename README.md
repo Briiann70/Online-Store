@@ -1,4 +1,4 @@
-# Test Online Store
+# Test Online Store Synapsis
 
 This is an online store backend API built with Go and Gin framework.
 
@@ -33,6 +33,7 @@ This is an online store backend API built with Go and Gin framework.
 - `POST /products`: Add product.
 - `POST /products/search`: See product list by category
 - `POST /cart`: Add items to the shopping cart.
+- `DELETE /cart`: Delete items to the shopping cart.
 - `POST /cart/products/:customer_id`: Get Cart Product.
 - `POST /checkout`: Checkout and make a payment.
 
