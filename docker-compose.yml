@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  app:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - DATABASE_URL=root:Aska2908_03@tcp(db:3306)/teststore?charset=utf8mb4&parseTime=True&loc=Local
+    depends_on:
+      - db
+  db:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: Aska2908_03
+      MYSQL_DATABASE: teststore
+    ports:
+      - "3306:3306"
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
