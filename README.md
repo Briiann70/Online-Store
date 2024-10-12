@@ -1,5 +1,4 @@
-# Test Online Store Synapsis
-
+# Online Store Backend
 This is an online store backend API built with Go and Gin framework.
 
 ## Features
